@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('listaArq');
 });
 
 Auth::routes();
@@ -20,6 +20,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::post('/uploadArq', 'HomeController@uploadArq')->name('uploadArq');
 Route::get('/listaArq', 'HomeController@listaArq')->name('listaArq');
+Route::get('/cadastrar', 'HomeController@cadastrar')->name('cadastrar');
 Route::post('/deleteArq', 'HomeController@deleteArq')->name('deleteArq');
 Route::get('/downloadArq/{id}', 'HomeController@downloadArq')->name('downloadArq');
 

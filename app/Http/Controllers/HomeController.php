@@ -28,6 +28,11 @@ class HomeController extends Controller
      */
     public function index()
     {
+        return redirect('listaArq');
+    }
+
+    public function cadastrar()
+    {
         return view('home');
     }
 
@@ -76,7 +81,7 @@ class HomeController extends Controller
 
     public function listaArq(){
 
-        $lista = DB::table('uploads')->get();
+        $lista = Upload::all();
         return view('lista', compact('lista'));
 
     }
@@ -88,8 +93,9 @@ class HomeController extends Controller
 
     public function deleteArq(Request $request){
         
+        $deleteArq = Storage::delete(public_path('downloads/' . $request->nome));
         $deletedRows = Upload::where('id', $request->id)->delete();
-        Storage::delete($request->nome);
+        $deleteArq->delete();
         return redirect('listaArq');
         
 

@@ -1,0 +1,25 @@
+.painel-quadro{
+    background-color: #e46c0b;
+    color: white;
+    font-family: 'Verdana';
+    text-align:center;
+    font-size: 30px;
+}
+
+.input-nome {
+    width: 60%;
+}
+
+.botao-padrao{
+    background-color: #ffc000;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+}
+
+.botao-enviar{
+    background-color: #e46c0b;
+    width: 20%;
+    color: white;
+    font-weight: bold;
+}

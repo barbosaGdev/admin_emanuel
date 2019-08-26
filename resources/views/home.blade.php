@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-                <div class="panel-heading">Dashboard</div>
+                <div class="painel-quadro">Upload de Relatórios</div>
 
                 <div class="panel-body">
                     @if (session('status'))
@@ -16,29 +16,32 @@
 
                 <div class="container">
 
-                    <h2>Upload de Relatórios</h2>
-
                     <form action="uploadArq" method="post" enctype="multipart/form-data">
                     
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
                         
-                        <input type="text" name="nome_relatorio" id="nome_relatorio"
+                        <input class="input-nome" type="text" name="nome_relatorio" id="nome_relatorio"
                         placeholder="Nome do Arquivo">
+                        <br>
 
                         <br>
                         
                         <input type="file" name="relatorio" id="relatorio">
                         <br>
 
-                        <button type="submit">Enviar</button>
+                        <button class="btn botao-enviar" type="submit">Enviar</button>
 
                     </form>
                     
                 </div>
 
+                
+
 
                 </div>
+               
             </div>
+            <a class="btn botao-padrao" href="home">Ver Planilhas</a>
         </div>
     </div>
 </div>
