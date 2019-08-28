@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<section  style="padding: 5% 10% 100%;background-image: url('http://casaderepousoemanuel.com.br/wp-admin/admin-ajax.php?action=imgedit-preview&_ajax_nonce=9e82364fcc&postid=36&rand=5375')">
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
@@ -66,4 +67,5 @@
         </div>
     </div>
 </div>
+</section>
 @endsection

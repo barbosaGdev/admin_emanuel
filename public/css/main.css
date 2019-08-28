@@ -23,3 +23,16 @@
     color: white;
     font-weight: bold;
 }
+
+.tamanho-logo{
+    width: 50%;
+}
+
+.nav-menu{
+    padding: 10px;
+}
+
+.tamanho-login{
+    padding: 40px !important;
+    display: inline;
+}
